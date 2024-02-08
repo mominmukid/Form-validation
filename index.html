@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div id="form">
+            <div class="logo1">
+                <div class="logo"><i class="fa-brands fa-telegram"></i></div>
+            </div>
+            <div class="input-group">
+                <label>Full Name </label>
+                <input type="text" placeholder="Enter your name" class="same" id="input-name" onkeyup="validate_name()">
+                <span id="name-erorr"></span>
+            </div>
+            <div class="input-group">
+                <label>Phone No. </label>
+                <input type="tel" placeholder="123 456 7890" class="same" id="phone" onkeyup="validate_phone()">
+                <span id="phone-erorr"></span>
+            </div>
+            <div class="input-group">
+                <label >Email Id </label>
+                <input type="text" placeholder=" Enter Email" class="same" id="email" onkeyup="validate_email()" >
+                <span id="email-erorr"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Your Massage</label>
+                <textarea  id="massage" cols="30" rows="5" class="same2" placeholder="Enter your massage" onkeyup="validate_msg()"></textarea>
+                <span id="msg-erorr"></span>
+            </div>
+
+             <button id="submit" onclick=" validatesub()">Submit</button>
+             <span id="sub-erorr"></span>
+        </div>
+    </div>
+</body>
+
+</html>
